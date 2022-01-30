@@ -1,0 +1,241 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #FFF0DB, #FFF0DB, #FFB4F2);
+  font-family: "M PLUS 1 Code", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #EF4165;
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFB4F2;
+  border-radius: 4px;
+}
+
+main {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  padding: 0px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+main div.kiri {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 60%;
+}
+main div.kiri div.atas {
+  margin-bottom: 50px;
+}
+main div.kiri div.atas h1 {
+  font-size: 4em;
+  font-weight: 500;
+}
+main div.kiri div.atas p {
+  padding-left: 50px;
+  text-align: center;
+}
+main div.kiri div.bawah {
+  width: 100%;
+  min-height: 400px;
+  background: url(../../asset/gbr/bg-kiri.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+main div.kanan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 30%;
+  min-height: 600px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+main div.kanan div.judul {
+  padding-bottom: 50px;
+}
+main div.kanan div.judul h2 {
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+}
+main div.kanan div.textbox {
+  margin-bottom: 25px;
+}
+main div.kanan div.textbox input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  background-color: #EF4165;
+  border-radius: 20px;
+  padding-left: 20px;
+  color: #ffffff;
+}
+main div.kanan div.textbox input:focus {
+  outline: none;
+}
+main div.kanan div.textbox input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+main div.kanan div.content-cek-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+main div.kanan div.content-cek-box div.pass-link a {
+  text-decoration: none;
+  color: #EF4165;
+}
+main div.kanan div.content-cek-box div.pass-link a:hover {
+  color: #FFB4F2;
+}
+main div.kanan div.submit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+main div.kanan div.submit input[type=submit] {
+  width: 40%;
+  height: 40px;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  background: #EF4165;
+  border-radius: 20px;
+}
+main div.kanan div.submit input[type=submit]:hover {
+  background: #FFB4F2;
+  color: #EF4165;
+}
+main div.kanan div.sigup {
+  display: flex;
+  justify-content: center;
+}
+main div.kanan div.sigup a {
+  text-decoration: none;
+  color: #EF4165;
+}
+main div.kanan div.sigup a:hover {
+  color: #FFB4F2;
+}
+
+@media (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main div.kiri {
+    width: 100%;
+  }
+  main div.kiri div.atas h1 {
+    text-align: center;
+  }
+  main div.kiri div.atas p {
+    padding: 0;
+  }
+  main div.kiri div.bawah {
+    display: none;
+  }
+  main div.kanan {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  main div.kiri {
+    width: 100%;
+    padding: 0;
+  }
+  main div.kiri div.atas h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  main div.kiri div.atas p {
+    padding: 0;
+    font-size: 1em;
+  }
+  main div.kiri div.bawah {
+    display: none;
+  }
+  main div.kanan {
+    width: 100%;
+  }
+  main div.kanan div.content-cek-box div.cek-box {
+    padding-bottom: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
